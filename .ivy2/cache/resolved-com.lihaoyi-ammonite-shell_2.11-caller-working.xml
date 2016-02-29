@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+	<info organisation="com.lihaoyi"
+		module="ammonite-shell_2.11-caller"
+		revision="working"
+		status="release"
+		publication="20160205190141"
+		default="true"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+		<artifact name="ammonite-shell_2.11-caller" type="jar" ext="jar" conf="default"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.lihaoyi" name="ammonite-shell_2.11" rev="0.5.4" conf="*->*"/>
+	</dependencies>
+</ivy-module>

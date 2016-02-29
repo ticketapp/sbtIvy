@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="com.typesafe.rp" module="parser_2.10" revision="1.0-rp-15v09p03" status="release" publication="20151120171639">
+		<license name="Typesafe Subscription Agreement" url="http://downloads.typesafe.com/website/legal/TypesafeSubscriptionAgreement.pdf"/>
+		<description>
+		parser
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="parser_2.10" type="jar" ext="jar" conf="compile"/>
+		<artifact name="parser_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="parser_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.rp" name="util_2.10" rev="1.0-rp-15v09p03" conf="compile->default(compile)"/>
+		<dependency org="com.cunei" name="jacks_2.10" rev="2.1.9" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe" name="config" rev="1.2.1" conf="compile->default(compile)"/>
+		<dependency org="org.specs2" name="specs2_2.10" rev="2.1.1" conf="test->default(compile)"/>
+	</dependencies>
+</ivy-module>

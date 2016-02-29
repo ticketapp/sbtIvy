@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.brianmckenna</groupId>
+    <artifactId>sbt-wartremover</artifactId>
+    <packaging>jar</packaging>
+    <description>sbt-wartremover</description>
+    <url>https://github.com/typelevel/wartremover</url>
+    <version>0.11</version>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>sbt-wartremover</name>
+    <organization>
+        <name>org.brianmckenna</name>
+        <url>https://github.com/typelevel/wartremover</url>
+    </organization>
+    <scm>
+        <url>git@github.com:typelevel/wartremover.git</url>
+        <connection>scm:git:git@github.com:typelevel/wartremover.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>puffnfresh</id>
+            <name>Brian McKenna</name>
+            <url>http://brianmckenna.org/</url>
+        </developer>
+    </developers>
+    <properties>
+        <sbtVersion>0.13</sbtVersion>
+        <scalaVersion>2.10</scalaVersion>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>sbt</artifactId>
+            <version>0.13.5</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
